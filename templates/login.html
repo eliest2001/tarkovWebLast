@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='login.css')}}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>     
+<body>
+
+<h1>Tarkov FIR Items For Quests</h1>
+
+<form method="post" class="form row" onsubmit="return login()">
+    <div class="imgcontainer column">
+      <img src="https://mir-s3-cdn-cf.behance.net/projects/404/3ed7c1134658049.Y3JvcCw5OTksNzgyLDAsMTA4.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container column">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <div>
+        <span class="singup">Signup <a href="/signup">here</a></span>
+      </div>
+      
+      
+    </div>
+
+</form>
+<script src="{{url_for('static', filename='login.js')}}"></script>
+</body>
+</html>

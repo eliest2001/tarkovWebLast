@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>     
+<body>
+
+<h1>Tarkov FIR Items For Quests</h1>
+<div class="center-username">
+    <span class="label">Logged in as</span>
+    <span class="name"></span>
+</div>
+
+<input type="text" id="searchInput" onkeyup="searchitems()" placeholder="Search for item names.." autocomplete="off">
+<table id="quest-items-table">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Amount</th>
+            <th>Quests</th>
+            <th>Image</th>
+            <th>Collected</th>
+        </tr>
+    </thead>
+    <tbody id="quest-items-tbody"></tbody>
+</table>
+
+<script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>
